@@ -1,251 +1,117 @@
-/* Unser Einsatzgebiet */
-
+/* Einsatzgebiet – kompakter und übersichtlich */
 .service-area {
-
-  padding: 70px 20px;
-
-  background: #f4f8f5;
-
+    padding: 45px 16px !important;
+    background: #f4f8f5;
 }
 
 .service-area-container {
-
-  max-width: 1200px;
-
-  margin: 0 auto;
-
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .service-area h2 {
-
-  margin: 0 0 35px;
-
-  color: #082f25;
-
-  font-size: clamp(32px, 5vw, 52px);
-
-  font-weight: 800;
-
-  letter-spacing: -1.5px;
-
+    margin: 0 0 24px;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.15;
+    color: #102b27;
+    letter-spacing: -1px;
 }
 
 .service-area-card {
-
-  display: grid;
-
-  grid-template-columns: 0.85fr 1.15fr;
-
-  gap: 35px;
-
-  align-items: center;
-
-  padding: 35px;
-
-  background: linear-gradient(135deg, #003d2d, #006447);
-
-  border-radius: 28px;
-
-  box-shadow: 0 18px 45px rgba(0, 50, 35, 0.15);
-
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    border-radius: 22px;
+    background: linear-gradient(135deg, #003d2d, #006047);
+    color: #fff;
 }
 
 .service-area-locations {
-
-  display: flex;
-
-  flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: #fff;
 }
 
 .location {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 18px;
-
-  padding: 17px 0;
-
-  color: #ffffff;
-
-  font-size: 23px;
-
-  font-weight: 650;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 13px 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .location:last-child {
-
-  border-bottom: none;
-
+    border-bottom: none;
 }
 
 .location-pin {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  flex-shrink: 0;
-
-  width: 42px;
-
-  height: 42px;
-
-  color: #ffffff;
-
-  background: #22994e;
-
-  border-radius: 50%;
-
-  font-size: 15px;
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #22994e;
+    color: #fff;
 }
 
 .service-area-map {
-
-  width: 100%;
-
+    width: 100%;
+    min-width: 0;
 }
 
-.service-area-map iframe {
-
-  display: block;
-
-  width: 100%;
-
-  height: 420px;
-
-  border: 0;
-
-  border-radius: 18px;
-
+.service-area-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 390px;
+    object-fit: contain;
+    border-radius: 14px;
 }
 
 .maps-link {
-
-  display: inline-block;
-
-  margin-top: 18px;
-
-  color: #ffffff;
-
-  font-weight: 600;
-
-  text-decoration: none;
-
+    display: inline-block;
+    margin-top: 18px;
+    color: #fff;
+    font-weight: 600;
 }
 
-.maps-link:hover {
-
-  text-decoration: underline;
-
-}
-
+/* Darstellung auf dem Smartphone */
 @media (max-width: 768px) {
+    .service-area {
+        padding: 35px 16px !important;
+    }
 
-  .service-area {
+    .service-area h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
 
-    padding: 45px 16px;
+    .service-area-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 20px;
+        border-radius: 18px;
+    }
 
-  }
-/* Korrektur Einsatzgebiet */
-.service-area-card {
-  background: linear-gradient(135deg, #003d2d, #006447);
-  color: #ffffff;
-  padding: 24px;
-  border-radius: 22px;
-}
+    .location {
+        font-size: 18px;
+        padding: 10px 0;
+    }
 
-.service-area-locations {
-  color: #ffffff;
-}
+    .location-pin {
+        width: 30px;
+        height: 30px;
+    }
 
-.location {
-  color: #ffffff;
-}
-
-.location-pin {
-  color: #ffffff;
-  background: #22994e;
-  border-radius: 50%;
-}
-
-.service-area-map {
-  width: 100%;
-  min-width: 0;
-}
-
-.service-area-map iframe {
-  width: 100%;
-  height: 350px;
-  display: block;
-  border: 0;
-  border-radius: 16px;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .service-area-card {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 24px;
-    padding: 20px;
-  }
-
-  .service-area-map iframe {
-    height: 320px;
-  }
-}
-  .service-area h2 {
-
-    margin-bottom: 24px;
-
-    font-size: 34px;
-
-    letter-spacing: -1px;
-
-  }
-
-  .service-area-card {
-
-    grid-template-columns: 1fr;
-
-    gap: 24px;
-
-    padding: 22px;
-
-    border-radius: 22px;
-
-  }
-
-  .location {
-
-    gap: 14px;
-
-    padding: 13px 0;
-
-    font-size: 20px;
-
-  }
-
-  .location-pin {
-
-    width: 38px;
-
-    height: 38px;
-
-  }
-
-  .service-area-map iframe {
-
-    height: 320px;
-
-  }
-
+    .service-area-image {
+        max-height: 300px;
+    }
 }
