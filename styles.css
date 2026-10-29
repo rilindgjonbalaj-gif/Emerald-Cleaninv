@@ -133,3 +133,22 @@
 .service-area-map iframe {
     display: none;
 }
+/* Einsatzgebiet kompakter darstellen */
+#einsatzgebiet .service-area-card {
+    padding: 24px;
+    gap: 18px;
+}
+
+#einsatzgebiet .einsatzgebiet-bild {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+#einsatzgebiet .service-area-map iframe {
+    display: none;
+}
