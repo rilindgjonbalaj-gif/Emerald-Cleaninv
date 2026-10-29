@@ -115,3 +115,21 @@
         max-height: 300px;
     }
 }
+/* Bild des Einsatzgebiets */
+.einsatzgebiet-bild {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+.service-area-map {
+    width: 100%;
+    min-width: 0;
+}
+
+.service-area-map iframe {
+    display: none;
+}
