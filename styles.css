@@ -152,19 +152,26 @@
 #einsatzgebiet .service-area-map iframe {
     display: none;
 }
-/* EMERALD CONTACT – Hintergrundbild */
-#kontakt.contact {
+/* EMERALD CONTACT – Hintergrundbild mit sanftem Verlauf */
+
+.contact {
     background-image:
         linear-gradient(
             135deg,
-            rgba(0, 35, 27, 0.55),
-            rgba(0, 75, 55, 0.75)
+            rgba(0, 35, 27, 0.48),
+            rgba(0, 75, 55, 0.62)
         ),
-        url("./emerald-contact-background.jpg?v=2") !important;
+        url("./emerald-contact-background.jpg") !important;
 
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
 
     padding: 100px 0 !important;
+}
+
+/* Kontaktkarte bleibt gut lesbar */
+.contact .contact-box {
+    background: rgba(0, 55, 43, 0.65);
+    backdrop-filter: blur(5px);
 }
