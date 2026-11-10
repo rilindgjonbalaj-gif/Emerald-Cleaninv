@@ -152,3 +152,18 @@
 #einsatzgebiet .service-area-map iframe {
     display: none;
 }
+.contact {
+    position: relative;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(16, 42, 35, 0.15),
+            rgba(16, 42, 35, 0.65),
+            #102b27
+        ),
+        url("emerald-contact-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
