@@ -175,3 +175,10 @@
     background: rgba(0, 55, 43, 0.65);
     backdrop-filter: blur(5px);
 }
+#kontakt {
+    background-image: url("./emerald-contact-background.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    outline: 5px solid red !important;
+}
