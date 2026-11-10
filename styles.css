@@ -152,10 +152,15 @@
 #einsatzgebiet .service-area-map iframe {
     display: none;
 }
-#kontakt {
-    background-image: url("./emerald-contact-background.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    outline: 5px solid red !important;
+#kontakt.contact {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0, 35, 27, 0.45),
+            rgba(0, 75, 55, 0.60)
+        ),
+        url("./emerald-contact-background.jpg")
+        center / cover no-repeat;
+
+    padding: 100px 0;
 }
